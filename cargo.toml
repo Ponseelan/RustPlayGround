@@ -1,0 +1,14 @@
+[package]
+name = "library"
+version = "0.1.0"
+authors = ["Ethen"]
+edition = "2018"
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+actix-rt = "2.8.0"
+actix-web = "4.3.1"
+instant = "0.1.12"
+serde = { version = "1.0.162", features = ["derive"] }
+serde_json = { version = "1.0.96", default-features = false, features = ["alloc"] }
